@@ -14,6 +14,7 @@
 		B07ED0E620686F190006C19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07ED0E420686F190006C19B /* LaunchScreen.storyboard */; };
 		B07ED0EE20686F860006C19B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0ED20686F860006C19B /* LoginViewController.swift */; };
 		B07ED0F02068781F0006C19B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0EF2068781F0006C19B /* RegisterViewController.swift */; };
+		B07ED0F22068B3A80006C19B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0F12068B3A80006C19B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B07ED0E720686F190006C19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07ED0ED20686F860006C19B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B07ED0EF2068781F0006C19B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B07ED0F12068B3A80006C19B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				B07ED0E720686F190006C19B /* Info.plist */,
 				B07ED0ED20686F860006C19B /* LoginViewController.swift */,
 				B07ED0EF2068781F0006C19B /* RegisterViewController.swift */,
+				B07ED0F12068B3A80006C19B /* MainViewController.swift */,
 			);
 			path = PetFeeder;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				B07ED0F02068781F0006C19B /* RegisterViewController.swift in Sources */,
 				B07ED0EE20686F860006C19B /* LoginViewController.swift in Sources */,
 				B07ED0DC20686F190006C19B /* AppDelegate.swift in Sources */,
+				B07ED0F22068B3A80006C19B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
