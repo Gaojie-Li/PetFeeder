@@ -374,6 +374,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = PetFeeder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +396,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = PetFeeder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
