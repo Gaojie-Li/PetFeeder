@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F33CA4FD92FF0DE0C58B9FD /* Pods_PetFeeder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972CF997F841DF599FABF68D /* Pods_PetFeeder.framework */; };
 		B07ED0DC20686F190006C19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0DB20686F190006C19B /* AppDelegate.swift */; };
 		B07ED0E120686F190006C19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07ED0DF20686F190006C19B /* Main.storyboard */; };
 		B07ED0E320686F190006C19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07ED0E220686F190006C19B /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0302D2CB28D67FFFE425085A /* Pods-PetFeeder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFeeder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder.debug.xcconfig"; sourceTree = "<group>"; };
+		584C276C94611D3555D884D9 /* Pods-PetFeeder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFeeder.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder.release.xcconfig"; sourceTree = "<group>"; };
+		972CF997F841DF599FABF68D /* Pods_PetFeeder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetFeeder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07ED0D820686F190006C19B /* PetFeeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFeeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07ED0DB20686F190006C19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B07ED0E020686F190006C19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F33CA4FD92FF0DE0C58B9FD /* Pods_PetFeeder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DE3910BED06D79407097E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0302D2CB28D67FFFE425085A /* Pods-PetFeeder.debug.xcconfig */,
+				584C276C94611D3555D884D9 /* Pods-PetFeeder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D3F7B7AAFDCCC00DEBC8F08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972CF997F841DF599FABF68D /* Pods_PetFeeder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B07ED0CF20686F190006C19B = {
 			isa = PBXGroup;
 			children = (
 				B07ED0DA20686F190006C19B /* PetFeeder */,
 				B07ED0D920686F190006C19B /* Products */,
+				8DE3910BED06D79407097E05 /* Pods */,
+				9D3F7B7AAFDCCC00DEBC8F08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B07ED0EA20686F190006C19B /* Build configuration list for PBXNativeTarget "PetFeeder" */;
 			buildPhases = (
+				CE4592A143794664B0173B2B /* [CP] Check Pods Manifest.lock */,
 				B07ED0D420686F190006C19B /* Sources */,
 				B07ED0D520686F190006C19B /* Frameworks */,
 				B07ED0D620686F190006C19B /* Resources */,
+				4530E692C34BBCC8B54DBBB6 /* [CP] Embed Pods Frameworks */,
+				5984A7583C9130C96A02BF48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4530E692C34BBCC8B54DBBB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5984A7583C9130C96A02BF48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4592A143794664B0173B2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetFeeder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B07ED0D420686F190006C19B /* Sources */ = {
@@ -276,9 +359,16 @@
 		};
 		B07ED0EB20686F190006C19B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0302D2CB28D67FFFE425085A /* Pods-PetFeeder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Parse\"",
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = PetFeeder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;
@@ -290,9 +380,16 @@
 		};
 		B07ED0EC20686F190006C19B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584C276C94611D3555D884D9 /* Pods-PetFeeder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Parse\"",
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = PetFeeder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;

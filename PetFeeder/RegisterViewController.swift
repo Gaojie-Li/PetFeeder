@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 class RegisterViewController : UIViewController {
     @IBOutlet weak var usernameText: UITextField!
@@ -22,7 +23,12 @@ class RegisterViewController : UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else {
+            let user = PFUser()
+            user.username = usernameText.text!
+            user.email = emailText.text!
+            user.password = passwordText.text!
             
+            user.signUpInBackground()
         }
     }
     

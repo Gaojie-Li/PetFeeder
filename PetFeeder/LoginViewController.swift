@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 class LoginViewController : UIViewController {
     @IBOutlet weak var usernameText: UITextField!
@@ -19,6 +20,9 @@ class LoginViewController : UIViewController {
     
     @IBOutlet weak var cutePic: UIImageView!
     
+    @IBAction func loginAction(_ sender: UIButton) {
+        PFUser.logInWithUsername(inBackground: usernameText.text!, password: passwordText.text!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
