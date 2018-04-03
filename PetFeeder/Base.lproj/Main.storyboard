@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,6 +77,9 @@
                                 <state key="normal" title="Forget your password?">
                                     <color key="titleColor" red="0.36854389309883118" green="0.56726658344268799" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fpK-EM-xMc" kind="push" id="8rs-5R-TtN"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hungry-cat" translatesAutoresizingMaskIntoConstraints="NO" id="NnJ-ox-yZn">
                                 <rect key="frame" x="67" y="543" width="240" height="128"/>
@@ -121,7 +123,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wby-4i-CZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="69"/>
+            <point key="canvasLocation" x="-49" y="105"/>
+        </scene>
+        <!--Password View Controller-->
+        <scene sceneID="BIE-CO-FUw">
+            <objects>
+                <viewController id="fpK-EM-xMc" customClass="PasswordViewController" customModule="PetFeeder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mj-TO-J1k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your email please :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iol-rq-ffa">
+                                <rect key="frame" x="48" y="271" width="227" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ote-Hs-Vqx">
+                                <rect key="frame" x="48" y="319" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O9-yg-aeU">
+                                <rect key="frame" x="112" y="444" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="sendEmailPressed:" destination="fpK-EM-xMc" eventType="touchUpInside" id="QIV-tM-8O6"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please input your registration email and we will send you a link to reset your password." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-ij-1iM">
+                                <rect key="frame" x="42" y="186" width="252" height="80.666666666666671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7gJ-D0-ygG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0JT-xS-i2J"/>
+                    <connections>
+                        <outlet property="emailText" destination="ote-Hs-Vqx" id="8VG-aZ-EqF"/>
+                        <outlet property="enterEmailLabel" destination="iol-rq-ffa" id="CpG-fx-dmt"/>
+                        <outlet property="noticeTextView" destination="e0e-ij-1iM" id="fHB-fE-le6"/>
+                        <outlet property="sendEmailButton" destination="8O9-yg-aeU" id="Me8-pq-7nh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Clq-sg-hLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-834.39999999999998" y="849.7536945812808"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="uZl-1s-o0P">
@@ -186,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTG-VR-oih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="736.69950738916259"/>
+            <point key="canvasLocation" x="-20" y="851"/>
         </scene>
     </scenes>
     <resources>

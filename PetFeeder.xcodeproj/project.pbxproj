@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724253702072E66000152ED3 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242536F2072E66000152ED3 /* PasswordViewController.swift */; };
 		8F33CA4FD92FF0DE0C58B9FD /* Pods_PetFeeder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972CF997F841DF599FABF68D /* Pods_PetFeeder.framework */; };
 		B07ED0DC20686F190006C19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0DB20686F190006C19B /* AppDelegate.swift */; };
 		B07ED0E120686F190006C19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07ED0DF20686F190006C19B /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0302D2CB28D67FFFE425085A /* Pods-PetFeeder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFeeder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder.debug.xcconfig"; sourceTree = "<group>"; };
 		584C276C94611D3555D884D9 /* Pods-PetFeeder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFeeder.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetFeeder/Pods-PetFeeder.release.xcconfig"; sourceTree = "<group>"; };
+		7242536F2072E66000152ED3 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		972CF997F841DF599FABF68D /* Pods_PetFeeder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetFeeder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07ED0D820686F190006C19B /* PetFeeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFeeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07ED0DB20686F190006C19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				B07ED0ED20686F860006C19B /* LoginViewController.swift */,
 				B07ED0EF2068781F0006C19B /* RegisterViewController.swift */,
 				B07ED0F12068B3A80006C19B /* MainViewController.swift */,
+				7242536F2072E66000152ED3 /* PasswordViewController.swift */,
 			);
 			path = PetFeeder;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07ED0F02068781F0006C19B /* RegisterViewController.swift in Sources */,
+				724253702072E66000152ED3 /* PasswordViewController.swift in Sources */,
 				B07ED0EE20686F860006C19B /* LoginViewController.swift in Sources */,
 				B07ED0DC20686F190006C19B /* AppDelegate.swift in Sources */,
 				B07ED0F22068B3A80006C19B /* MainViewController.swift in Sources */,
