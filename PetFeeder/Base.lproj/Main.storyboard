@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pr9-k5-VAi">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pr9-k5-VAi">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="pr9-k5-VAi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hr8-2v-PdM">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PetFeeder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-Ws-tPj">
@@ -81,10 +81,6 @@
                                     <segue destination="fpK-EM-xMc" kind="push" id="8rs-5R-TtN"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hungry-cat" translatesAutoresizingMaskIntoConstraints="NO" id="NnJ-ox-yZn">
-                                <rect key="frame" x="67" y="543" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pet Feeder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWR-Fv-qYW">
                                 <rect key="frame" x="67" y="133" width="240" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -92,6 +88,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hungry-cat" translatesAutoresizingMaskIntoConstraints="NO" id="NnJ-ox-yZn">
+                                <rect key="frame" x="67" y="504" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -115,22 +115,115 @@
             <objects>
                 <viewController id="uwh-0e-2kx" customClass="MainViewController" customModule="PetFeeder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Njv-jE-nQM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V6D-2P-hM7">
+                                <rect key="frame" x="0.0" y="64" width="150" height="559"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-kO-cEl">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="UMW-6F-FUR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Profile"/>
+                                        <connections>
+                                            <segue destination="BDf-Tm-72R" kind="show" id="9jF-hJ-5JT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-bw-kQV">
+                                        <rect key="frame" x="0.0" y="42" width="150" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="ORZ-eR-dwT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="My Pets"/>
+                                        <connections>
+                                            <segue destination="kGP-jV-3Kl" kind="show" id="Yqd-Lg-36f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNg-bV-mSB">
+                                        <rect key="frame" x="0.0" y="84" width="150" height="433"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdF-K5-efb">
+                                        <rect key="frame" x="0.0" y="517" width="150" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="wb5-6u-HT8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Sign out"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77147098891322197" green="0.96744489455162741" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="qxL-uR-vSq"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXs-FV-bhZ" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEL-QV-CoF">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zol-UX-4Qe"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="hamburger-icon" id="Z8B-6j-BDW">
+                                        <color key="tintColor" red="0.36854389310000002" green="0.56726658340000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hamburgerTapped:" destination="uwh-0e-2kx" id="wny-7C-gfN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eEL-QV-CoF" secondAttribute="bottom" id="0pn-79-pDN"/>
+                            <constraint firstItem="QXs-FV-bhZ" firstAttribute="trailing" secondItem="BR4-Df-xZs" secondAttribute="trailing" id="8fg-Bb-Y2P"/>
+                            <constraint firstItem="V6D-2P-hM7" firstAttribute="top" secondItem="BR4-Df-xZs" secondAttribute="top" id="P0V-ov-8fR"/>
+                            <constraint firstItem="QXs-FV-bhZ" firstAttribute="top" secondItem="BR4-Df-xZs" secondAttribute="top" id="Woo-fp-BAA"/>
+                            <constraint firstItem="eEL-QV-CoF" firstAttribute="top" secondItem="QXs-FV-bhZ" secondAttribute="bottom" id="Wsr-5a-aCk"/>
+                            <constraint firstItem="eEL-QV-CoF" firstAttribute="top" secondItem="V6D-2P-hM7" secondAttribute="bottom" id="XkH-Bc-4iU"/>
+                            <constraint firstItem="QXs-FV-bhZ" firstAttribute="leading" secondItem="BR4-Df-xZs" secondAttribute="leading" id="iar-4b-8ha"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BR4-Df-xZs"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="leadingConstraints" destination="iar-4b-8ha" id="pvL-9q-88n"/>
+                        <outlet property="mainView" destination="QXs-FV-bhZ" id="v9J-t6-jpi"/>
+                        <outlet property="trailingConstraints" destination="8fg-Bb-Y2P" id="y5n-ld-CiQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wby-4i-CZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="105"/>
+            <point key="canvasLocation" x="-50.399999999999999" y="104.92610837438424"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wch-xh-cfX">
+            <objects>
+                <viewController id="BDf-Tm-72R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyI-gR-2zt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AMU-pP-ZH2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enK-5l-i4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="39"/>
         </scene>
         <!--Password View Controller-->
         <scene sceneID="BIE-CO-FUw">
             <objects>
                 <viewController id="fpK-EM-xMc" customClass="PasswordViewController" customModule="PetFeeder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3mj-TO-J1k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your email please :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iol-rq-ffa">
@@ -177,14 +270,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clq-sg-hLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-834.39999999999998" y="849.7536945812808"/>
+            <point key="canvasLocation" x="-1458" y="850"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="uZl-1s-o0P">
             <objects>
                 <viewController id="NXd-Kb-oyJ" customClass="RegisterViewController" customModule="PetFeeder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYp-YP-ajs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BiS-17-TSN">
@@ -242,11 +335,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTG-VR-oih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="851"/>
+            <point key="canvasLocation" x="-753" y="850"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nu7-eS-WBc">
+            <objects>
+                <viewController id="kGP-jV-3Kl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AqS-ts-IEp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B0H-F3-RCl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHA-r1-FW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="714"/>
         </scene>
     </scenes>
     <resources>
         <image name="fishtank" width="2824" height="1883"/>
+        <image name="hamburger-icon" width="50" height="50"/>
         <image name="hungry-cat" width="1920" height="1080"/>
     </resources>
 </document>
