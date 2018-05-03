@@ -16,6 +16,14 @@
 		B07ED0EE20686F860006C19B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0ED20686F860006C19B /* LoginViewController.swift */; };
 		B07ED0F02068781F0006C19B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0EF2068781F0006C19B /* RegisterViewController.swift */; };
 		B07ED0F22068B3A80006C19B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ED0F12068B3A80006C19B /* MainViewController.swift */; };
+		B0BBA1AA2098432F00E9DB9D /* AddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1A92098432F00E9DB9D /* AddDeviceViewController.swift */; };
+		B0BBA1B52098568100E9DB9D /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1AE2098567F00E9DB9D /* Socket.swift */; };
+		B0BBA1B62098568100E9DB9D /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1AF2098567F00E9DB9D /* UDPClient.swift */; };
+		B0BBA1B72098568100E9DB9D /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1B02098567F00E9DB9D /* TCPClient.swift */; };
+		B0BBA1B82098568100E9DB9D /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1B12098568000E9DB9D /* yudpsocket.c */; };
+		B0BBA1B92098568100E9DB9D /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1B22098568000E9DB9D /* ytcpsocket.c */; };
+		B0BBA1BA2098568100E9DB9D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1B42098568100E9DB9D /* Result.swift */; };
+		B0BBA1BC2098667600E9DB9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BBA1BB2098667600E9DB9D /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,16 @@
 		B07ED0ED20686F860006C19B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B07ED0EF2068781F0006C19B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B07ED0F12068B3A80006C19B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B0BBA1A92098432F00E9DB9D /* AddDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewController.swift; sourceTree = "<group>"; };
+		B0BBA1AD2098567E00E9DB9D /* PetFeeder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetFeeder-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0BBA1AE2098567F00E9DB9D /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		B0BBA1AF2098567F00E9DB9D /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClient.swift; sourceTree = "<group>"; };
+		B0BBA1B02098567F00E9DB9D /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		B0BBA1B12098568000E9DB9D /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		B0BBA1B22098568000E9DB9D /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		B0BBA1B32098568000E9DB9D /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftSocket.h; sourceTree = "<group>"; };
+		B0BBA1B42098568100E9DB9D /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B0BBA1BB2098667600E9DB9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,13 @@
 		B07ED0DA20686F190006C19B /* PetFeeder */ = {
 			isa = PBXGroup;
 			children = (
+				B0BBA1B42098568100E9DB9D /* Result.swift */,
+				B0BBA1AE2098567F00E9DB9D /* Socket.swift */,
+				B0BBA1B32098568000E9DB9D /* SwiftSocket.h */,
+				B0BBA1B02098567F00E9DB9D /* TCPClient.swift */,
+				B0BBA1AF2098567F00E9DB9D /* UDPClient.swift */,
+				B0BBA1B22098568000E9DB9D /* ytcpsocket.c */,
+				B0BBA1B12098568000E9DB9D /* yudpsocket.c */,
 				B07ED0DB20686F190006C19B /* AppDelegate.swift */,
 				B07ED0DF20686F190006C19B /* Main.storyboard */,
 				B07ED0E220686F190006C19B /* Assets.xcassets */,
@@ -93,6 +118,9 @@
 				B07ED0EF2068781F0006C19B /* RegisterViewController.swift */,
 				B07ED0F12068B3A80006C19B /* MainViewController.swift */,
 				7242536F2072E66000152ED3 /* PasswordViewController.swift */,
+				B0BBA1A92098432F00E9DB9D /* AddDeviceViewController.swift */,
+				B0BBA1AD2098567E00E9DB9D /* PetFeeder-Bridging-Header.h */,
+				B0BBA1BB2098667600E9DB9D /* ProfileViewController.swift */,
 			);
 			path = PetFeeder;
 			sourceTree = "<group>";
@@ -132,6 +160,7 @@
 				TargetAttributes = {
 					B07ED0D720686F190006C19B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -229,9 +258,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07ED0F02068781F0006C19B /* RegisterViewController.swift in Sources */,
+				B0BBA1B52098568100E9DB9D /* Socket.swift in Sources */,
+				B0BBA1B72098568100E9DB9D /* TCPClient.swift in Sources */,
+				B0BBA1B62098568100E9DB9D /* UDPClient.swift in Sources */,
+				B0BBA1B92098568100E9DB9D /* ytcpsocket.c in Sources */,
 				724253702072E66000152ED3 /* PasswordViewController.swift in Sources */,
+				B0BBA1BA2098568100E9DB9D /* Result.swift in Sources */,
 				B07ED0EE20686F860006C19B /* LoginViewController.swift in Sources */,
+				B0BBA1B82098568100E9DB9D /* yudpsocket.c in Sources */,
 				B07ED0DC20686F190006C19B /* AppDelegate.swift in Sources */,
+				B0BBA1BC2098667600E9DB9D /* ProfileViewController.swift in Sources */,
+				B0BBA1AA2098432F00E9DB9D /* AddDeviceViewController.swift in Sources */,
 				B07ED0F22068B3A80006C19B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +407,7 @@
 			baseConfigurationReference = 0302D2CB28D67FFFE425085A /* Pods-PetFeeder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
@@ -382,6 +420,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetFeeder/PetFeeder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +432,7 @@
 			baseConfigurationReference = 584C276C94611D3555D884D9 /* Pods-PetFeeder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
@@ -404,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS523.PetFeeder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetFeeder/PetFeeder-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
